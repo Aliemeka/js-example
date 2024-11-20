@@ -1,0 +1,19 @@
+.box {
+  height: 200px;
+  width: 200px;
+  margin: 30px auto;
+  border: 2px solid black;
+}
+
+.center {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.center > button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
