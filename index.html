@@ -9,13 +9,15 @@
   <body>
     <h1>JS App</h1>
 
-    <button onclick="sayHello()">Say hello</button>
-
-    <div class="box"></div>
+    <div onmouseover="grow()" onmouseleave="returnToNormal()" class="box"></div>
     <div class="center">
       <button onclick="turnBoxRed()">Turn Red</button>
       <button onclick="turnBoxBlue()">Turn Blue</button>
       <button onclick="turnBoxGreen()">Turn Green</button>
+      <button onclick="rotateCW()">Spin CW</button>
+      <button onclick="rotateACW()">Spin ACW</button>
+      <button onclick="stopRotation()">Stop spin</button>
+      <button onclick="toogleCircle()">Toggle circle</button>
     </div>
     <script src="app.js" />
   </body>

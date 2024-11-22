@@ -3,6 +3,7 @@
   width: 200px;
   margin: 30px auto;
   border: 2px solid black;
+  transition-duration: 300ms;
 }
 
 .center {
@@ -16,4 +17,39 @@
   padding: 8px 12px;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.grow {
+  height: 500px;
+  width: 500px;
+}
+
+.rotate-cw {
+  animation: spinCW 1.5s linear infinite;
+}
+
+@keyframes spinCW {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-acw {
+  animation: spinACW 1.5s linear infinite;
+}
+
+@keyframes spinACW {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.circle {
+  border-radius: 50%;
 }
